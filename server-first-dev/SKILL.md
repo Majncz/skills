@@ -42,7 +42,8 @@ Read references only when needed. Prefer outcomes over rigid commands—the serv
 
 ### 2. Inspect Server
 
-- OS, disk, RAM, Docker availability, open ports.
+- OS, disk, RAM, Docker availability, Node/npm availability, open ports.
+- Assume the server may be completely clean. Install missing prerequisites yourself (for example `curl`, `git`, `ca-certificates`, Node.js/npm, Docker/Compose, and any build tools needed by the generated app).
 - Record findings in `docs/agent/DEVLOG.md` as you go.
 
 ### 3. Scaffold Project
