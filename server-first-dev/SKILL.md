@@ -13,6 +13,10 @@ Bootstrap a real production application on a single server. This skill runs once
 - User explicitly wants the "server-first" / article workflow setup.
 - Reviewing or finishing an incomplete bootstrap (readiness checklist not done).
 
+## Operating Rule
+
+Read this skill thoughtfully before building the application. Treat it as the required bootstrap contract unless the user explicitly says otherwise. Do **not** jump straight into implementing the user's app: first inspect the server, install prerequisites, establish the server-first structure, and create the future-agent/readiness foundations this skill requires.
+
 ## When Not To Use
 
 - Routine bug fixes or features on an already-bootstrapped project (read `AGENTS.md` first).
@@ -33,6 +37,8 @@ By the end of bootstrap, deliver:
 ## Workflow
 
 Read references only when needed. Prefer outcomes over rigid commands—the server and app shape can vary.
+
+Do the bootstrap workflow **before** building product features. The user application is built inside this structure, not as an unstructured first draft that gets deployment added later.
 
 ## User Assumption
 
