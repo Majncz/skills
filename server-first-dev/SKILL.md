@@ -34,6 +34,10 @@ By the end of bootstrap, deliver:
 
 Read references only when needed. Prefer outcomes over rigid commands—the server and app shape can vary.
 
+## User Assumption
+
+Assume the user is non-technical unless they clearly show otherwise. Do as much as you safely can yourself: install tools, inspect state, choose reasonable defaults, and explain only decisions the user actually needs to make. If the user is technical or asks for detail, switch to a more technical style.
+
 ### 1. Understand
 
 - Confirm domains: production (`example.com` / `www`) and development (`dev.example.com` or user choice).

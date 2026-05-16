@@ -21,6 +21,7 @@
 
 ## Rules
 
+- Assume the user is non-technical by default. Do as much as is safe yourself, explain only necessary choices, and switch to technical detail only when the user asks or clearly has the context.
 - Never commit secrets. Use the server workbench secrets UI or env files documented in ENVIRONMENTS.md.
 - Read DEVLOG.md before deploys; append after meaningful changes.
 - Prefer reversible changes: backup DB before migrations; commit before risky edits.
