@@ -1,0 +1,65 @@
+{
+  "skill_name": "server-first-dev",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm on a fresh Hetzner Ubuntu server via SSH. Build a cafe presentation website and pickup e-shop at webprokavarnu.cz: menu preview, e-shop for cakes with custom-order notes, in-store pickup only, simple checkout, /admin for products and orders with live order board. Use the server-first workflow.",
+      "expected_output": "Monorepo with Express, Vite React, Prisma, Postgres prod+dev, MinIO, Caddy, Docker Compose, workbench with readiness checklist, local backups without external service, AGENTS.md and docs/agent/*, distinctive public pages and shadcn admin.",
+      "files": [],
+      "assertions": [
+        "Creates or documents production and development hostnames",
+        "Creates server workbench with readiness/to-do page",
+        "Does not require Hetzner Storage Box or external backup service for initial ship",
+        "Creates AGENTS.md and docs/agent directory",
+        "Uses Socket.IO for admin or order status, not on static homepage",
+        "Leaves rollback/backup documentation"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Bootstrap an internal appointment booking system on this new server with dev.mydomain.com and mydomain.com, admin calendar, and server workbench. First-time server setup.",
+      "expected_output": "Full bootstrap with separate dev/prod, admin UI per administration-design patterns, workbench, local backups, future-agent docs.",
+      "files": [],
+      "assertions": [
+        "Separate development and production environments documented",
+        "Admin UI follows compact shadcn shell from admin-design reference",
+        "Workbench is mostly read-only without restart buttons by default",
+        "READINESS.md or workbench checklist includes GitHub step before off-server backups"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Continue server-first bootstrap: add workbench to-dos page, seed production readiness checklist, and show backup status page (local backups only for now).",
+      "expected_output": "Workbench pages for todos, readiness, and backup status aligned with references.",
+      "files": [],
+      "assertions": [
+        "Readiness checklist includes default items from workbench-readiness-checklist reference",
+        "User can add arbitrary to-dos separate from readiness",
+        "Backup policy documents hourly 24h then daily retention",
+        "AI updates checklist items when verifying, not guessing"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "The last deploy broke production. Use the project's agent docs to roll back code and database to the previous state.",
+      "expected_output": "Agent reads AGENTS.md, ROLLBACK.md, DEVLOG.md; performs git and pg_restore or documented restore; updates DEVLOG.",
+      "files": [],
+      "assertions": [
+        "Reads AGENTS.md or docs/agent before acting",
+        "Uses documented backup/rollback paths rather than inventing destructive steps",
+        "Records rollback in DEVLOG.md"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Guide me through connecting this server project to GitHub with SSH; I may not have an account yet. Then mark readiness and update agent docs.",
+      "expected_output": "Step-by-step GitHub account/repo/SSH guidance; readiness item checked or deferred with reason; ENVIRONMENTS or DEVLOG updated.",
+      "files": [],
+      "assertions": [
+        "Offers GitHub setup without assuming prior knowledge",
+        "Updates readiness checklist for GitHub connected or explicitly deferred",
+        "Does not skip documenting remote URL in agent docs when connected"
+      ]
+    }
+  ]
+}
